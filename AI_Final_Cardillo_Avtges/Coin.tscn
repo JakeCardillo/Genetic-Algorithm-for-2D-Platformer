@@ -1,0 +1,33 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Sprites/Sprites/Tiles/tile000.png" type="Texture" id=1]
+[ext_resource path="res://Sprites/Sprites/Tiles/tile001.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/Sprites/Tiles/tile002.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/Sprites/Tiles/tile003.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/Sprites/Tiles/tile004.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/Sprites/Tiles/tile005.png" type="Texture" id=6]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 32.0
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 1 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 5.0
+} ]
+
+[node name="Coin" type="Area2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2( 0.5, 0.5 )
+shape = SubResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+scale = Vector2( 0.25, 0.25 )
+frames = SubResource( 2 )
+animation = "Idle"
+frame = 2
+playing = true
+[connection signal="body_entered" from="." to="." method="_on_Coin_body_entered"]
