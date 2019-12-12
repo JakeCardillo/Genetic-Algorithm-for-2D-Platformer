@@ -1,0 +1,24 @@
+G: 17  SP: 343  J: -544  ACC: 51
+Score: 7
+G: 19  SP: 335  J: -544  ACC: 51
+Score: 7
+G: 18  SP: 340  J: -548  ACC: 50
+Score: 7
+G: 18  SP: 340  J: -539  ACC: 52
+Score: 7
+G: 16  SP: 348  J: -544  ACC: 51
+Score: 0
+G: 19  SP: 330  J: -544  ACC: 51
+Score: 7
+G: 18  SP: 340  J: -551  ACC: 49
+Score: 7
+G: 18  SP: 340  J: -550  ACC: 50
+Score: 7
+G: 19  SP: 330  J: -544  ACC: 51
+Score: 7
+G: 18  SP: 330  J: -544  ACC: 51
+Score: 7
+G: 18  SP: 340  J: -546  ACC: 50
+Score: 7
+G: 18  SP: 340  J: -554  ACC: 51
+Score: 7
